@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 from math import gamma
 
 def t(freedom):
-    x = np.linspace(-6, 6, 1001)
+    x = np.linspace(-10, 10, 1001)
     y = gamma((freedom + 1) / 2) / np.sqrt(freedom * np.pi) / gamma(freedom / 2) * (1 + x**2 / freedom) ** (-((freedom + 1) / 2))
     return x, y, np.std(y)
 
