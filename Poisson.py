@@ -4,7 +4,7 @@ from math import factorial
 
 r=range(21)
 
-for p in [(3,'r'),(5,'b'),(7,'g')]:
+for p in [(3,'r'),(5,'g'),(7,'b')]:
     for k in r:
         plt.scatter(k,p[0]**k * np.exp(-p[0]) / factorial(k),color=p[1])
 
